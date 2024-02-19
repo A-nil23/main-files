@@ -1,0 +1,31 @@
+ 1  sudo yum update
+    2  sudo yum install -y yum-utils shadow-utils
+    3  sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/AmazonLinux/hashicorp.repo
+    4  sudo yum -y install terraform
+    5  aws configure
+    6  ll
+    7  ls
+    8  cd .aws/
+    9  ll
+   10  vim config
+   11  cd
+   12  mkdir Terraform
+   13  cd Terraform
+   14  main.tf
+   15  vim main.tf
+   16  terraform init
+   17  terraform plan
+   18  terraform apply
+   19  terraform destroy
+   20  ll
+   21  cat terraform.tfstate
+   22  vim main.tf
+   23  teraform plan
+   24  terraform plan
+   25  terraform apply
+   26  ll
+   27  cat terraform.tfstate
+   28  terraform state list
+   29  terraform destroy -target=aws_instance.one[0]
+   30  terraform state list
+   31  terraform destroy -target=aws_instance.one[1] -target=aws_instance.one[2]
